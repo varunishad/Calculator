@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/309e37b520.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calci</title>
+</head>
+<body>
+    <div class="col">
+        <div class="inp">
+            <form>
+                <input type="" name="" id="val" class="screen" onkeypress="return noAlphabets(event)" autofocus>
+            </form>
+        </div>
+        <div class="row">
+            <button onclick="display(1)" class="num"> 1 </button>
+            <button onclick="display(2)" class="num"> 2 </button>
+            <button onclick="display(3)" class="num"> 3 </button>
+            <button onclick="display('+')" class="operator"> + </button>
+        </div>
+        <div class="row">
+            <button onclick="display(4)" class="num"> 4 </button>
+            <button onclick="display(5)" class="num"> 5 </button>
+            <button onclick="display(6)" class="num"> 6 </button>
+            <button onclick="display('-')" class="operator"> - </button>
+        </div>
+        <div class="row">
+            <button onclick="display(7)" class="num"> 7 </button>
+            <button onclick="display(8)" class="num"> 8 </button>
+            <button onclick="display(9)" class="num"> 9 </button>
+            <button onclick="display('*')" class="operator"> * </button>
+        </div>
+        <div class="row">
+            <!-- <button onclick="display('00')" class="num"> 00 </button> -->
+            <button onclick="display('.')" class="num"> . </button>
+            <button onclick="display(0)" class="num"> 0 </button>
+            <button onclick="display('backspace')" class="backspace"><i class="fa fa-arrow-left"></i></button>
+            <button onclick="display('/')" class="operator"> / </button>
+        </div>
+        <div class="row">
+            <button id="cc" onclick="display('clear')">C</button>
+            <button id="ans" onclick="display('ans')"> Ans</button>
+            <button id="equals" class="operator" style="width: 50%;" onclick="display('=')">=</button>
+        </div>
+    </div>
+<script src="script.js"></script> 
+</body>
+</html> 

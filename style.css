@@ -1,0 +1,111 @@
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+            /* To remove the outline from input box, buttons, etc   */
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+
+        /*--------  To center a div vertically and horizontally ------*/
+        /*  --  From here  --  */
+        .col {
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            /*----------------------------------------  till here -----*/
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            border: 2px solid;
+            border-radius: 30px;
+            background-color: black;
+        }
+
+        .inp,
+        form {
+            border-radius: 30px;
+        }
+
+        #val {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            padding: 53px 10px;
+            font-size: 30px;
+            border: 0px;
+            color: white;
+            border-top-left-radius: 29px;
+            border-top-right-radius: 29px;
+            background-color: black;
+
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        button { 
+            font-size: 20px;
+            max-width: 130px;
+            max-height: 50px;
+            width: 130px;
+            height: 50px;
+            background-color: rgb(65, 65, 65);
+            color: #fff;
+        }
+        .backspace .fa.fa-arrow-left{
+            color: rgb(219, 183, 22);
+        }
+
+        #ans {
+            background-color: rgb(65, 65, 65);
+            color: rgb(35, 163, 35);
+            font-weight: bold;
+        }
+
+        #cc {
+            background-color: rgb(65, 65, 65);
+            color: rgb(219, 183, 22);
+            font-weight: bolder;
+            border-bottom-left-radius: 29px;
+        }
+
+        #equals {
+            border-bottom-right-radius: 29px;
+            max-width: 50%;
+        }
+
+        .operator {
+            background-color: rgb(31, 31, 31);
+            color: rgb(0, 224, 224);
+            font-weight: bolder;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col {
+                position: absolute;
+                left: 50%;
+                top: 45%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 94vw;
+            }
+            button { 
+                font-size: 20px;
+                width: 25%;
+                height: 50px;            
+            }
+        }
+    
